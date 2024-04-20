@@ -1,7 +1,9 @@
+import React from "react";
+
 const HomePage = () => {
   return (
     <div>
-      <h3>Welcome to home page</h3>
+      <h2>This is home page</h2>
     </div>
   );
 };
