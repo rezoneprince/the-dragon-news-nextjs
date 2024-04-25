@@ -16,6 +16,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import Link from "next/link";
+import Header from "../Header/Header";
 
 const navItems = [
   {
@@ -46,46 +47,49 @@ const navItems = [
 
 function Navbar() {
   return (
-    <AppBar position="static" className="bg-black">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Image src={logo} width={100} height={100} alt="logo" />
+    <>
+      <Header></Header>
+      <AppBar position="static" className="bg-black">
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <Image src={logo} width={100} height={100} alt="logo" />
 
-          <Box className="w-full text-center">
-            {navItems.map((item) => (
-              <Link key={item} href={item.pathname}>
-                <Button className="text-white">{item.route}</Button>
-              </Link>
-            ))}
-          </Box>
+            <Box className="w-full text-center">
+              {navItems.map((item) => (
+                <Link key={item} href={item.pathname}>
+                  <Button className="text-white">{item.route}</Button>
+                </Link>
+              ))}
+            </Box>
 
-          <Box>
-            <Stack
-              direction="row"
-              spacing={2}
-              sx={{
-                "& svg": {
-                  color: "white",
-                },
-              }}
-            >
-              <IconButton>
-                <FacebookIcon />
-              </IconButton>
-              <IconButton>
-                <InstagramIcon />
-              </IconButton>
-              <IconButton>
-                <XIcon />
-              </IconButton>
-              <IconButton>
-                <PinterestIcon />
-              </IconButton>
-            </Stack>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+            <Box>
+              <Stack
+                direction="row"
+                spacing={2}
+                sx={{
+                  "& svg": {
+                    color: "white",
+                  },
+                }}
+              >
+                <IconButton>
+                  <FacebookIcon />
+                </IconButton>
+                <IconButton>
+                  <InstagramIcon />
+                </IconButton>
+                <IconButton>
+                  <XIcon />
+                </IconButton>
+                <IconButton>
+                  <PinterestIcon />
+                </IconButton>
+              </Stack>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+    </>
   );
 }
 export default Navbar;
