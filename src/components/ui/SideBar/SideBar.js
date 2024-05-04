@@ -1,13 +1,17 @@
 import {
   Box,
+  ButtonBase,
   Card,
   CardActionArea,
   CardContent,
   CardMedia,
+  Grid,
+  Paper,
   Typography,
 } from "@mui/material";
 import Image from "next/image";
 import sideTopNews from "@/assets/side-top-news.png";
+import topNews2 from "@/assets/top-news2.png";
 
 const SideBar = () => {
   return (
@@ -34,6 +38,159 @@ const SideBar = () => {
           </CardContent>
         </CardActionArea>
       </Card>
+
+      <Paper className="mt-5">
+        <Grid container spacing={2}>
+          <Grid item>
+            <ButtonBase sx={{ width: 128, height: 128 }}>
+              <Image src={topNews2} alt="topNews2" />
+            </ButtonBase>
+          </Grid>
+          <Grid item xs={12} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Typography gutterBottom variant="subtitle1" component="div">
+                  Standard license
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                  This is lorem ipsun doller.
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  ID: 1030114
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle1" component="div">
+                $19.00
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Paper>
+
+      <Paper className="mt-5">
+        <Grid container spacing={2}>
+          <Grid item>
+            <ButtonBase sx={{ width: 128, height: 128 }}>
+              <Image src={topNews2} alt="topNews2" />
+            </ButtonBase>
+          </Grid>
+          <Grid item xs={12} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Typography gutterBottom variant="subtitle1" component="div">
+                  Standard license
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                  This is lorem ipsun doller.
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  ID: 1030114
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle1" component="div">
+                $19.00
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Paper>
+
+      <Paper className="mt-5">
+        <Grid container spacing={2}>
+          <Grid item>
+            <ButtonBase sx={{ width: 128, height: 128 }}>
+              <Image src={topNews2} alt="topNews2" />
+            </ButtonBase>
+          </Grid>
+          <Grid item xs={12} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Typography gutterBottom variant="subtitle1" component="div">
+                  Standard license
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                  This is lorem ipsun doller.
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  ID: 1030114
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle1" component="div">
+                $19.00
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Paper>
+
+      <Paper className="mt-5">
+        <Grid container spacing={2}>
+          <Grid item>
+            <ButtonBase sx={{ width: 128, height: 128 }}>
+              <Image src={topNews2} alt="topNews2" />
+            </ButtonBase>
+          </Grid>
+          <Grid item xs={12} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Typography gutterBottom variant="subtitle1" component="div">
+                  Standard license
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                  This is lorem ipsun doller.
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  ID: 1030114
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle1" component="div">
+                $19.00
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Paper>
+
+      <Paper className="mt-5">
+        <Grid container spacing={2}>
+          <Grid item>
+            <ButtonBase sx={{ width: 128, height: 128 }}>
+              <Image src={topNews2} alt="topNews2" />
+            </ButtonBase>
+          </Grid>
+          <Grid item xs={12} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Typography gutterBottom variant="subtitle1" component="div">
+                  Standard license
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                  This is lorem ipsun doller.
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  ID: 1030114
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle1" component="div">
+                $19.00
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Paper>
+      <CardMedia className="mt-5">
+        <Image src={sideTopNews} width={800} alt="topNews" />
+      </CardMedia>
     </Box>
   );
 };
