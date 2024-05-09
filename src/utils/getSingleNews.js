@@ -1,6 +1,6 @@
 export const getSingleNews = async (id) => {
   const res = await fetch(
-    `https://the-news-portal-server.vercel.app/news/${id}`,
+    `https://the-dragon-news-server.onrender.com/news/${id}`,
     {
       catch: "no-store",
     }

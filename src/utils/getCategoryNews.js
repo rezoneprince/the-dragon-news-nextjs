@@ -1,6 +1,6 @@
 export const getCategoryNews = async (category) => {
   const res = await fetch(
-    `https://the-news-portal-server.vercel.app/news?category=${category}`,
+    `https://the-dragon-news-server.onrender.com/news?category=${category}`,
     {
       catch: "no-store",
     }
